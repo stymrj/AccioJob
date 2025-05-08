@@ -133,7 +133,7 @@ console.log(min);
 
 ----------------
 Approach - 2
-*/
+
 
 
 let a = 75
@@ -148,3 +148,19 @@ while(start<=a && start <= b){
     start++
 }
 console.log(ans)
+*/
+
+let a = 75 
+let b = 90
+
+let max = Math.max(a,b)
+let min = Math.min(a,b)
+
+while(max%min!=0){
+    let rem = max%min;
+    if(rem!=0){
+        max = min
+        min = rem
+    }
+}
+console.log(min)
