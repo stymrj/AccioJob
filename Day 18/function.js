@@ -186,7 +186,6 @@ console.log(large(12,34))
 
 
 
-*/
 
 
 function UpperCase(name){
@@ -198,5 +197,47 @@ console.log(UpperCase('satyam'))
 let upperCase = (name)=>{
     return name.toUpperCase();
 }
-
 console.log(upperCase('gupta'))
+
+
+
+function rollDice(){
+    let num = Math.floor(Math.random()*10)+1
+    return num
+}
+
+
+
+function print_multipleTable(n){
+    for(let i=1;i<=10;i++){
+        console.log(`${n} X ${i} = ${n*i}`)
+    }
+}
+print_multipleTable(5);
+
+>>>>>> Printing the sum of the N Natural number
+
+function sum_uptoN(n){
+    let sum = 0
+    while(n>0){
+        sum += n
+        n--
+    }
+    return sum
+}
+console.log(sum_uptoN(10))
+
+>>>>>> Concat the Elements of an Array using the finction 
+
+let arr = ['Hey!', 'I', 'am', 'Satyam','Gupta']
+
+function concat(){
+    let str = ""
+    for(let i=0;i<arr.length;i++){
+        str += arr[i] + " "
+    }
+    return str;
+}
+console.log(concat())
+
+*/
