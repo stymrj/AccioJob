@@ -80,6 +80,7 @@ function fact(n){
 }
 fact(5)
 
+Method - 2
 */
 
 function fact(n){
